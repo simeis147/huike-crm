@@ -2,6 +2,7 @@
 =========================
 - [官方主页](https://pip.itcast.cn/java-hk)
 - [演示地址](http://huike-crm.itheima.net/#/login)
+- [产品文档](https://app.mockplus.cn/s/J75ri9TemI9U)
 
 **项目背景**
 =========================
