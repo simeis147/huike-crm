@@ -10,5 +10,12 @@ import java.util.List;
  */
 public interface ReviewService {
 
-
+    /**
+     * 插入数据
+     * @param name
+     * @param age
+     * @param sex
+     * @return
+     */
+    String saveData(String name, Integer age, String sex);
 }

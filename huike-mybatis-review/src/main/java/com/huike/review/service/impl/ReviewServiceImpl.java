@@ -23,7 +23,26 @@ public class ReviewServiceImpl implements ReviewService {
     @Autowired
     private MybatisReviewMapper reviewMapper;
 
+
+
+
     /**=========================================================保存数据的方法=============================================*/
+    /**
+     * 插入数据
+     * @param name
+     * @param age
+     * @param sex
+     * @return
+     */
+    public String saveData(String name, Integer age, String sex) {
+        try {
+            int i = reviewMapper.savaData(name,age,sex);
+            return "成功插入:" + i + "条数据";
+        } catch (Exception e) {
+            throw new CustomException("数据插入失败");
+        }
+
+    }
 
 
     /**=========================================================删除数据=============================================*/

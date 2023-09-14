@@ -5,4 +5,7 @@
 <mapper namespace="com.huike.review.mapper.MybatisReviewMapper">
 
 
+    <insert id="savaData">
+        insert into mybatis_review (name,age,sex) values (#{name},#{age},#{sex})
+    </insert>
 </mapper>

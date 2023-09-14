@@ -17,9 +17,11 @@ public class ReviewController {
     private ReviewService reviewService;
 
     @GetMapping("/saveData/{name}/{age}/{sex}")
-    public AjaxResult saveDataOne(@PathVariable String name, @PathVariable Integer age, @PathVariable String sex){
+    public AjaxResult saveDataOne(@PathVariable("name") String name,
+                                  @PathVariable("age") Integer age,
+                                  @PathVariable("sex") String sex){
         log.info("插入数据{}, {}, {}",name,age,sex);
-        return AjaxResult.success();
+        return AjaxResult.success(reviewService.saveData(name,age,sex));
     }
 
 }

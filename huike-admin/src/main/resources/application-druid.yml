@@ -13,9 +13,9 @@ spring:
             slave:
                 # 从数据源开关/默认关闭
                 enabled: false
-                url: 
-                username: 
-                password: 
+                url: jdbc:mysql://127.0.0.1:3306/huike?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
+                username: root
+                password: 123456
             # 初始连接数
             initialSize: 5
             # 最小连接池数量
